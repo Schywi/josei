@@ -20,9 +20,13 @@ ul,a {
 
 /*Header */
 header{
+    width: 100%;
     display: flex;
     flex-direction: column;
+    padding-bottom: 20px;
+   
 }
+
 .nav-link{ 
     display: flex;
     justify-content: flex-start;
@@ -32,6 +36,7 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
+   
 }
 
 ul{ 
@@ -67,7 +72,7 @@ ul li:first-child {
 
 /* Banner */
 section { 
-    background: url(./banner.jpg) no-repeat center center   ;
+    background: url(../assets/banner.jpg) no-repeat center center   ;
     background-size: cover;
     width: 100vw;
     height: 83vh;
@@ -96,9 +101,9 @@ section h1 {
     color: #ffffff;;
 }
 
+ 
 
 .button { 
-   
     padding: 14px 28px;
     line-height: normal;
     border-radius: 0;
@@ -107,8 +112,48 @@ section h1 {
     text-align: center;
     letter-spacing: 0.2em;
 
-    background-color: white; 
 }
+
+/* Button*/
+
+.button {
+    background-color: #ffffff;
+    border: none;
+    color: #141414;
+    outline: none;
+    padding: 12px 40px 10px;
+   position: relative;
+  }
+  
+  .button:before,
+  .button:after {
+    border: 0 solid transparent;
+    transition: all 0.3s;
+    content: '';
+    height: 0;
+    position: absolute;
+    width: 24px;
+  }
+   
+  
+  .button:before {
+    border-top: 2px solid #ffffff;
+    right: 0;
+    top: -4px;
+  }
+  
+  .button:after {
+    border-bottom: 2px solid #ffffff;
+    bottom: -4px;
+    left: 0;
+  }
+  
+  .button:hover:before,
+  .button:hover:after {
+    width: 100%;
+  }
+
+
 
 section .button {
     margin-bottom: 50px;
@@ -140,8 +185,16 @@ section .button {
     flex-direction: column;
     max-width: 239px;
     text-align: center;
- 
-} 
+    transition: 0.5s ease-in-out;
+  
+   
+}
+
+.produtos:hover{ 
+
+   transform:  translate(8px ,0px)
+}
+
 
 
 .produtos a { 
@@ -191,7 +244,7 @@ section .button {
     justify-content: flex-end;
     align-items: flex-start;
 
-    background: url(./child.jpg) no-repeat center top   ;
+    background: url(../assets/child.jpg) no-repeat center top   ;
     background-size: cover;
     height: 470px;
    
@@ -204,7 +257,7 @@ section .button {
     justify-content: flex-end;
     align-items: flex-start;
 
-    background: url(./b.jpg) no-repeat center top   ;
+    background: url(../assets/b.jpg) no-repeat center top   ;
     background-size: cover;
     height: 470px;
    
@@ -217,7 +270,7 @@ section .button {
     justify-content: flex-end;
     align-items: flex-start;
 
-    background: url(./d.jpg) no-repeat center top   ;
+    background: url(../assets/d.jpg) no-repeat center top   ;
     background-size: cover;
     height: 470px;
   
@@ -264,7 +317,7 @@ section .button {
 /* Banner to footer */
 
 .banner-footer{ 
-    background: url("./2.jpg") no-repeat center center;
+    background: url(../assets/2.jpg) no-repeat center center;
     background-size: cover;
     width: 100vw;
     height: 80vh;

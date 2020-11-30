@@ -1,0 +1,21 @@
+
+.wrap-products { 
+  
+    grid-template-columns: repeat(auto-fill, minmax(255px,1fr));
+}
+
+.produtos { 
+    display: flex;
+    flex-direction: column;
+    max-width: 239px;
+    text-align: center;
+    transition: 1s;
+}
+
+.produtos:hover{ 
+    transform:  none;
+ }
+
+ .produtos img { 
+    height: 255px;
+ } 
