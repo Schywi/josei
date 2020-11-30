@@ -11,10 +11,7 @@
     text-align: center;
     transition: 1s;
 }
-
-.produtos:hover{ 
-    transform:  none;
- }
+ 
 
  .produtos img { 
     height: 255px;
