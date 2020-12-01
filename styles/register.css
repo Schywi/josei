@@ -1,0 +1,145 @@
+main { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form { 
+     
+    margin-top: 80px;
+}
+
+form header { 
+    text-align: center;
+    box-shadow: none;
+}
+
+form header h1 { 
+    font-size: 20px;
+     
+}
+
+form header p { 
+    margin-top: 30px;
+
+    font-size: 12px;
+    font-family: "Nunito Sans",sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #1c1b1b;
+    line-height: 1.65;
+}
+
+.form-item { 
+ 
+    position: relative;
+    margin-top: 15px;
+}
+
+.form-item input{ 
+ 
+
+font-size: 12px;
+ color: #1c1b1b;
+padding: 12px 14px;
+border-radius: 0;
+border: 1px solid #ddd;
+width: 100%;
+line-height: normal;
+resize: none;
+transition: border-color 0.1s ease-in-out;
+background: transparent;
+}
+
+.inputButton{ 
+   position: absolute;
+   background:transparent;
+   border:0; 
+   font-size: 12px;
+
+   right: 12px;
+   top: 50%;
+   cursor: pointer;
+   color: #6a6a6a;
+   transform: translateY(-50%);
+}
+
+
+.logInButton{ 
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px 28px;
+    line-height: normal;
+    border: 1px solid transparent;
+    
+    text-transform: uppercase;
+    font-size: 12px;
+    
+    
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #1c1b1b;
+}
+
+.logInButton {
+   
+    border: none;
+    outline: none;
+    padding: 12px 40px 10px;
+   position: relative;
+  }
+  
+  .logInButton:before,
+  .logInButton:after {
+    border: 0 solid transparent;
+    transition: all 0.3s;
+    content: '';
+    height: 0;
+    position: absolute;
+    width: 24px;
+  }
+   
+  
+  .logInButton:before {
+    border-top: 2px solid  #1c1b1b;
+    right: 0;
+    top: -4px;
+  }
+  
+  .logInButton:after {
+    border-bottom: 2px solid  #1c1b1b;
+    bottom: -4px;
+    left: 0;
+  }
+  
+  .logInButton:hover:before,
+  .logInButton:hover:after {
+    width: 100%;
+  }
+
+
+
+.form-hint  { 
+    margin-top: 20px;
+    font-family: "Nunito Sans",sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #1c1b1b;
+    line-height: 1.65;
+       text-align: center;
+    
+}
+
+.form-hint span{ 
+    color: #6a6a6a;
+    font-size: 12px;
+
+}
+
+.form-hint a{ 
+    transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.form-hint a:hover { 
+    color: #6a6a6a;
+} 

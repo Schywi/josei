@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ 
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/feminino.css">
+    <link rel="stylesheet" href="../styles/product.css">
+ 
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"> 
+
+    <title>Josei| Feminino</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">
+                <img class="logo" src="../assets/Josei-logo.png" alt="">
+            </a>
+            <input class="search" type="text" placeholder="O que você procura?">
+            <ul>
+              
+                <li><a href="./logIn.html">Entrar</a></li>
+                <li> <img class="icon" src="../assets/like.svg" alt=""></li>
+                <li> <img class="icon" src="../assets/cart.svg" alt=""></li>
+            </ul>
+        </nav>
+        <div class="nav-link">
+              <ul >
+              
+                  <li><a  class="link" href="./feminino.html">FEMININO</a></li>
+                  <li><a  class="link" href="./tecidos.html">TECIDOS</a></li>
+                  <li ><a class="link" href="#">MASCULINO </a></li>
+                  <li><a class="link" href="#">INFANTIL</a> </li>
+                  <li><a class="link" href="#">ACESSORIOS</a></li>
+                  <li><a class="link" href="#">SOBRE</a></li>
+              
+                </ul>
+        </div>
+    </header>
+    <main>
+        <div class="wrap-product">
+          
+            <img src="../assets/7.jpg" alt="">
+
+          
+            <div class="product-description">
+                <h1>Abigail Alpaca Scarf</h1>
+                <span id="SKU">
+                    SKU: KBT112ABIGAILALPACA
+                </span>
+                <span class="price">R$49 </span>
+                <span class="options-title">Tamanho:</span>
+                <ul class="switch-list">
+                    <li class="horizontal-List">
+                        <input id="size-product-1" placeholder="P" value="P" checked="checked" name="option-1" type="radio" >
+                        <label id="1" class="label" onclick="changeBorder(1)" for="size-product-1">P</label></li>
+                    <li class="horizontal-List">
+                        <input id="size-product-2"  value="M"  checked="checked" name="option-1" type="radio">
+                        <label  id="2"   class="label" onclick="changeBorder(2)"   for="size-product-2">M</label></li>
+                    <li class="horizontal-List">
+                        <input id="size-product-3" value="G"  checked="checked" name="option-1" type="radio">
+                        <label  id="3"  class="label" onclick="changeBorder(3)"  for="size-product-3">G</label></li>
+                    <li class="horizontal-List">
+                        <input id="size-product-4" value="GG"  checked="checked" name="option-1" type="radio">
+                        <label  id="4"  class="label" onclick="changeBorder(4)"  for="size-product-4">GG</label></li>
+                </ul>
+                <span class="options-title">Quantidade:</span>
+                <div class="product-quantity">
+                    <span class="quantity-button">
+                        <svg class="Icon Icon--minus" role="presentation" viewBox="0 0 16 2">
+                            <path d="M1,1 L15,1" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="square"></path>
+                          </svg>
+                    </span>
+                    <input type="text" value="1">
+                    <span class="quantity-button">
+                        <svg class="Icon Icon--plus" role="presentation" viewBox="0 0 16 16">
+                            <g stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                              <path d="M8,1 L8,15"></path>
+                              <path d="M1,8 L15,8"></path>
+                            </g>
+                          </svg>
+                    </span>
+                </div>
+                <button class="blackButton">Adicionar ao carrinho</button>
+            </div>
+        </div>
+    </main>
+       
+        <script src="../scripts/product.js"></script>
+</body>
+</html>

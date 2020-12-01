@@ -27,6 +27,21 @@ header{
    
 }
 
+header .search { 
+
+
+font-size: 12px;
+color: #1c1b1b;
+padding: 12px 14px;
+border-radius: 0;
+border: 1px solid #ddd;
+width: 50%;
+line-height: normal;
+resize: none;
+transition: border-color 0.1s ease-in-out;
+background: transparent;
+}
+
 .nav-link{ 
     display: flex;
     justify-content: flex-start;
