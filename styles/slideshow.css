@@ -1,0 +1,132 @@
+
+
+/* Slideshow container */
+
+.slideshow-container { 
+  overflow: hidden;
+}
+
+@keyframes display { 
+  0% {
+    transform: scale(1.2);
+   opacity: 0;
+  }
+
+  20%{
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+  
+    opacity: 1;
+  }
+ 
+}
+
+.pic-ctn {
+  position: relative;
+ 
+}
+
+.pic-ctn > .mySlides { 
+  opacity: 0;
+  animation: display 6.666666667s;
+}
+
+ 
+
+.pic-ctn section  .banner-text { 
+  position: relative;
+  top:70%;
+} 
+
+.pic-ctn .banner1 { 
+  background: url(../assets/banner.jpg) no-repeat center center   ;
+  background-size: cover;
+  width: 100vw;
+  height: 83vh;
+
+
+  display: flex;
+  flex-direction: column;
+ 
+  text-align: center;
+
+}
+
+
+.pic-ctn .banner2 { 
+  background: url(../assets/banner2.jpg) no-repeat center center   ;
+  background-size: cover;
+  width: 100vw;
+  height: 83vh;
+
+
+  display: flex;
+  flex-direction: column;
+ 
+  text-align: center;
+ 
+}
+
+.pic-ctn .banner3 { 
+  background: url(../assets/banner3.jpg) no-repeat center center   ;
+  background-size: cover;
+  width: 100vw;
+  height: 83vh;
+
+  position: relative;
+ 
+  display: flex;
+  flex-direction: column;
+ 
+  text-align: center;
+}
+
+
+
+/* The dots/bullets/indicators */
+
+
+.dot-wrap { 
+  position: relative;
+  top: -30px;
+} 
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
