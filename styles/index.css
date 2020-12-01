@@ -3,11 +3,12 @@
     padding: 0; 
     box-sizing: border-box;
 }
-
- 
-
-body{ 
+html { 
     overflow-x: hidden;
+}
+ 
+body{ 
+  
     font-family: Montserrat,sans-serif;
     font-weight: 500;
     font-style: normal;
