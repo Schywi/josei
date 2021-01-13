@@ -196,8 +196,16 @@ section .button {
     text-align: center;
     transition: 0.5s ease-in-out;
   
+  
    
 }
+
+
+
+.produtos img { 
+    height: 358px;
+ } 
+
 
 .produtos:hover{ 
 
