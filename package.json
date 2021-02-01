@@ -1,0 +1,23 @@
+{
+  "name": "josei",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Schywi/josei.git"
+  },
+  "author": "Lucas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Schywi/josei/issues"
+  },
+  "homepage": "https://github.com/Schywi/josei#readme",
+  "dependencies": {
+    "compass": "^0.1.1",
+    "sass": "^1.32.5"
+  }
+}
